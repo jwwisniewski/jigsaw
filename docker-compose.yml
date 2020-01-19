@@ -1,0 +1,43 @@
+version: "3.7"
+services:
+  nginx:
+    image: nginx:alpine
+    volumes:
+      - .:/var/www/html
+      - ./nginx/jigsaw.conf:/etc/nginx/conf.d/jigsaw.conf
+    environment:
+      VIRTUAL_HOST: jigsaw.docker
+    networks:
+      - network
+
+  phpfpm:
+    image: joshrob/php73fpm
+    volumes:
+      - .:/var/www/html
+    environment:
+      XDEBUG_CONFIG: remote_host=192.168.0.18
+    networks:
+      - network
+
+  database:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: jigsaw
+    volumes:
+      - data_volume:/var/lib/mysql
+    networks:
+      - network
+
+  adminer:
+    image: adminer
+    environment:
+      VIRTUAL_HOST: adminer.docker
+    networks:
+      - network
+
+volumes:
+  data_volume:
+
+networks:
+  network:
