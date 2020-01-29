@@ -21,9 +21,13 @@ services:
 
   database:
     image: mysql:5.7
+    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: jigsaw
+      MYSQL_USER: jigsaw
+      MYSQL_PASSWORD: jigsaw
+
     volumes:
       - data_volume:/var/lib/mysql
     networks:
@@ -31,6 +35,7 @@ services:
 
   adminer:
     image: adminer
+    restart: always
     environment:
       VIRTUAL_HOST: adminer.docker
     networks:
