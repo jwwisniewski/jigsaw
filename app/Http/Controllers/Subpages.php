@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Enum\SaveMode;
+use App\Http\Requests\UpdateSubpage;
 use App\Subpage;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Redirect;
 
 class Subpages extends Controller
 {
@@ -38,9 +38,10 @@ class Subpages extends Controller
         return view('subpages.edit', compact('subpage'));
     }
 
-    public function update(Request $request, Subpage $subpage)
+    public function update(UpdateSubpage $request, Subpage $subpage)
     {
-        $subpage->update($request->only(['title', 'contents']));
+        $validated = $request->validated();
+        $subpage->update($validated);
 
         if ($request->has(SaveMode::SAVE_AND_RETURN)) {
             return redirect()->route('subpage.index');

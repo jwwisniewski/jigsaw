@@ -38,7 +38,7 @@ class Subpage extends Model
 
     public function getTitleAttribute(): ?string
     {
-        $locale = \App::getLocale();
+        $locale = request()->get('edit-lang', \App::getLocale());
         $title = json_decode($this->attributes['title'], true, 512, JSON_THROW_ON_ERROR);
 
         return \Arr::get($title, $locale, null);
@@ -46,7 +46,7 @@ class Subpage extends Model
 
     public function setTitleAttribute($value): void
     {
-        $locale = \App::getLocale();
+        $locale = request()->get('edit-lang', \App::getLocale());
         $current = json_decode($this->attributes['title'], true, 512, JSON_THROW_ON_ERROR);
         $new = array_merge($current, [$locale => $value]);
         $this->attributes['title'] = json_encode($new, JSON_THROW_ON_ERROR, 512);
@@ -54,7 +54,7 @@ class Subpage extends Model
 
     public function getContentsAttribute(): ?string
     {
-        $locale = \App::getLocale();
+        $locale = request()->get('edit-lang', \App::getLocale());
         $title = json_decode($this->attributes['contents'], true, 512, JSON_THROW_ON_ERROR);
 
         return \Arr::get($title, $locale, null);
@@ -62,7 +62,7 @@ class Subpage extends Model
 
     public function setContentsAttribute($value): void
     {
-        $locale = \App::getLocale();
+        $locale = request()->get('edit-lang', \App::getLocale());
         $current = json_decode($this->attributes['contents'], true, 512, JSON_THROW_ON_ERROR);
         $new = array_merge($current, [$locale => $value]);
         $this->attributes['contents'] = json_encode($new, JSON_THROW_ON_ERROR, 512);

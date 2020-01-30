@@ -7,4 +7,5 @@ class SaveMode
 {
     public const SAVE_AND_CONTINUE = 'save-and-continue';
     public const SAVE_AND_RETURN = 'save-and-return';
+    public const CANCEL = 'cancel';
 }
