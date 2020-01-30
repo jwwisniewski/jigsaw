@@ -1,10 +1,11 @@
 <?php
 
 return [
-    'active-locales' => [
+    'availableClientLocales' => [
         'pl' => 'polish',
         'en' => 'english',
         'de' => 'german',
         'fr' => 'french',
-    ]
+    ],
+    'defaultClientLocale' => 'pl'
 ];

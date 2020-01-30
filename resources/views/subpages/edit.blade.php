@@ -14,7 +14,7 @@
     {!! Form::submit(__('ui.save-and-return'), ['name' => \App\Enum\SaveMode::SAVE_AND_RETURN]) !!}
     {!! Form::button(__('ui.cancel'), ['onclick' => new Illuminate\Support\HtmlString("window.location.href='" . route('subpage.index') . "'")]) !!}
 
-    {!! Form::hidden('edit-lang', request()->get('edit-lang', \App::getLocale())) !!}
+    {!! Form::hidden('edit-lang', request()->get('edit-lang', config('jigsaw.defaultClientLocale'))) !!}
 
 {!! Form::close() !!}
 

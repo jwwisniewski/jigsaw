@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Enum\SaveMode;
+use App\Http\Requests\StoreSubpage;
 use App\Http\Requests\UpdateSubpage;
 use App\Subpage;
-use Illuminate\Http\Request;
 
 class Subpages extends Controller
 {
@@ -21,15 +21,19 @@ class Subpages extends Controller
         return view('subpages.create');
     }
 
-    public function store(Request $request)
+    public function store(StoreSubpage $request)
     {
-        $subpage = new Subpage();
-        $subpage->forceFill([
-            'title->en' => 'the Subpage ' . rand(1, 1000),
-            'contents->en' => 'the Subpage ' . rand(1, 1000),
-        ]);
+        $validated = $request->validated();
 
+        $subpage = new Subpage();
+        $subpage->fill($validated);
         $subpage->save();
+
+        if ($request->has(SaveMode::SAVE_AND_RETURN)) {
+            return redirect()->route('subpage.index');
+        }
+
+        return redirect()->route('subpage.edit', $subpage->id);
 
     }
 
