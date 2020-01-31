@@ -6,6 +6,7 @@ use App\Enum\SaveMode;
 use App\Http\Requests\StoreSubpage;
 use App\Http\Requests\UpdateSubpage;
 use App\Subpage;
+use Illuminate\Http\Request;
 
 class Subpages extends Controller
 {
@@ -30,10 +31,14 @@ class Subpages extends Controller
         $subpage->save();
 
         if ($request->has(SaveMode::SAVE_AND_RETURN)) {
-            return redirect()->route('subpage.index');
+            return redirect()->to(base64_decode($request->get('return-path')));
         }
 
-        return redirect()->route('subpage.edit', $subpage->id);
+        return redirect()->route('subpage.edit', [
+            $subpage->id,
+            'edit-lang' => $request->get('edit-lang'),
+            'return-path' => $request->get('return-path'),
+        ]);
 
     }
 
@@ -48,16 +53,20 @@ class Subpages extends Controller
         $subpage->update($validated);
 
         if ($request->has(SaveMode::SAVE_AND_RETURN)) {
-            return redirect()->route('subpage.index');
+            return redirect()->to(base64_decode($request->get('return-path')));
         }
 
-        return redirect()->route('subpage.edit', $subpage->id);
-
+        return redirect()->route('subpage.edit', [
+            $subpage->id,
+            'edit-lang' => $request->get('edit-lang'),
+            'return-path' => $request->get('return-path'),
+        ]);
     }
 
-    public function destroy(Subpage $subpage)
+    public function destroy(Subpage $subpage, Request $request)
     {
         $subpage->delete();
-        return redirect()->route('subpage.index');
+
+        return redirect()->to(base64_decode($request->get('return-path')));
     }
 }
