@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f02b4597-983f-4606-af24-bdb5ab61e2a1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Enum/SaveMode.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Enum/SaveMode.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Subpages.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SubpageController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Traits/MultiLangSupport.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Subpage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Subpage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/ui.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/ui.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/common/editLang.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/common/editLang.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/subpages/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/subpage/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/subpages/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/subpage/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/subpages/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/subpage/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,6 +29,27 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Subpage.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="518">
+              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+              <folding>
+                <element signature="e#23#60#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Traits/MultiLangSupport.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="70" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/subpage/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -55,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/lang/en/ui.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
@@ -79,30 +92,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_01_201115_create_instances_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="18" column="34" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InstanceController.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Instance.php">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -144,7 +134,6 @@
         <option value="$PROJECT_DIR$/app/Http/Requests/StoreSubpage.php" />
         <option value="$PROJECT_DIR$/resources/lang/en/ui.php" />
         <option value="$PROJECT_DIR$/config/jigsaw.php" />
-        <option value="$PROJECT_DIR$/app/Subpage.php" />
         <option value="$PROJECT_DIR$/resources/views/common/editLang.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/subpages/edit.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
@@ -155,6 +144,9 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/SubpageController.php" />
         <option value="$PROJECT_DIR$/resources/views/subpage/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/subpage/edit.blade.php" />
+        <option value="$PROJECT_DIR$/app/Traits/MultilangSupport.php" />
+        <option value="$PROJECT_DIR$/app/Traits/MultiLangSupport.php" />
+        <option value="$PROJECT_DIR$/app/Subpage.php" />
       </list>
     </option>
   </component>
@@ -320,15 +312,7 @@
               <item name="jigsaw" type="b2602c69:ProjectViewProjectNode" />
               <item name="jigsaw" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jigsaw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jigsaw" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Requests" type="462c0819:PsiDirectoryNode" />
+              <item name="Traits" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jigsaw" type="b2602c69:ProjectViewProjectNode" />
@@ -479,6 +463,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.customizations" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Traits" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/Http/Requests" />
       <recent name="$PROJECT_DIR$" />
@@ -508,7 +495,7 @@
       <updated>1579468233348</updated>
       <workItem from="1579468234658" duration="74000" />
       <workItem from="1579468323369" duration="1397000" />
-      <workItem from="1580425411329" duration="7766000" />
+      <workItem from="1580425411329" duration="8429000" />
     </task>
     <task id="LOCAL-00001" summary="editlang dropdown; error pages; various tweaks">
       <created>1580425860961</created>
@@ -531,17 +518,24 @@
       <option name="project" value="LOCAL" />
       <updated>1580508009436</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="rename subpage controller, switch to camelCase">
+      <created>1580588500642</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1580588500642</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13635000" />
+    <option name="totallyTimeSpent" value="14298000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.42326334" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2996769" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -572,7 +566,8 @@
     <MESSAGE value="editlang dropdown; error pages; various tweaks" />
     <MESSAGE value="storing subpages" />
     <MESSAGE value="ckeditor and return-path" />
-    <option name="LAST_COMMIT_MESSAGE" value="ckeditor and return-path" />
+    <MESSAGE value="rename subpage controller, switch to camelCase" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename subpage controller, switch to camelCase" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -591,9 +586,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/laravelcollective/errors/src/publish/errors/illustrated-layout.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravelcollective/errors/src/publish/errors/branded-layout.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2775" />
@@ -762,13 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_ide_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="15090" column="31" selection-start-line="15090" selection-start-column="31" selection-end-line="15090" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Request.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -804,16 +789,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Subpage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="e#23#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Instances.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -836,16 +811,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InstanceController.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SubpageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-          <folding>
-            <element signature="e#40#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
@@ -875,6 +840,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SubpageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <folding>
+            <element signature="e#40#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_ide_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="16267" column="42" selection-start-line="16267" selection-start-column="22" selection-end-line="16267" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Traits/MultiLangSupport.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="70" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Subpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+          <folding>
+            <element signature="e#23#60#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

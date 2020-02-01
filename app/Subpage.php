@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Traits\MultiLangSupport;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -27,7 +28,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  */
 class Subpage extends Model
 {
-    use SoftDeletes;
+    use SoftDeletes, MultiLangSupport;
 
     protected $casts = [
         'title' => 'array',
@@ -38,34 +39,22 @@ class Subpage extends Model
 
     public function getTitleAttribute(): ?string
     {
-        $locale = request()->get('editLang', config('jigsaw.defaultClientLocale'));
-        $title = json_decode($this->attributes['title'], true, 512, JSON_THROW_ON_ERROR);
-
-        return \Arr::get($title, $locale, null);
+        return $this->readMultiLangValue('title');
     }
 
     public function setTitleAttribute($value): void
     {
-        $locale = request()->get('editLang', config('jigsaw.defaultClientLocale'));
-        $current = json_decode($this->attributes['title'] ?? '{}', true, 512, JSON_THROW_ON_ERROR);
-        $new = array_merge($current, [$locale => $value]);
-        $this->attributes['title'] = json_encode($new, JSON_THROW_ON_ERROR, 512);
+        $this->storeMultiLangValue('title', $value);
     }
 
     public function getContentsAttribute(): ?string
     {
-        $locale = request()->get('editLang', config('jigsaw.defaultClientLocale'));
-        $title = json_decode($this->attributes['contents'], true, 512, JSON_THROW_ON_ERROR);
-
-        return \Arr::get($title, $locale, null);
+        return $this->readMultiLangValue('contents');
     }
 
     public function setContentsAttribute($value): void
     {
-        $locale = request()->get('editLang', config('jigsaw.defaultClientLocale'));
-        $current = json_decode($this->attributes['contents'] ?? '{}', true, 512, JSON_THROW_ON_ERROR);
-        $new = array_merge($current, [$locale => $value]);
-        $this->attributes['contents'] = json_encode($new, JSON_THROW_ON_ERROR, 512);
+        $this->storeMultiLangValue('contents', $value);
     }
 
 }
