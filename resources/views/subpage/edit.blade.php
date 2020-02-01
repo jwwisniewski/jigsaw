@@ -15,12 +15,12 @@
     {!! Form::text('title') !!} <br>
     {!! Form::textarea('contents', null, ['id' => 'editor']) !!} <br>
 
-    {!! Form::submit(__('ui.save-and-continue'), ['name' => \App\Enum\SaveMode::SAVE_AND_CONTINUE]) !!}
-    {!! Form::submit(__('ui.save-and-return'), ['name' => \App\Enum\SaveMode::SAVE_AND_RETURN]) !!}
-    {!! Form::button(__('ui.cancel'), ['onclick' => new Illuminate\Support\HtmlString("window.location.href='" . base64_decode(request()->get('return-path')) . "'")]) !!}
+    {!! Form::submit(__('ui.saveAndContinue'), ['name' => \App\Enum\SaveMode::SAVE_AND_CONTINUE]) !!}
+    {!! Form::submit(__('ui.saveAndReturn'), ['name' => \App\Enum\SaveMode::SAVE_AND_RETURN]) !!}
+    {!! Form::button(__('ui.cancel'), ['onclick' => new Illuminate\Support\HtmlString("window.location.href='" . base64_decode(request()->get('returnPath')) . "'")]) !!}
 
-    {!! Form::hidden('edit-lang', request()->get('edit-lang', config('jigsaw.defaultClientLocale'))) !!}
-    {!! Form::hidden('return-path', request()->get('return-path')) !!}
+    {!! Form::hidden('editLang', request()->get('editLang', config('jigsaw.defaultClientLocale'))) !!}
+    {!! Form::hidden('returnPath', request()->get('returnPath')) !!}
 
 {!! Form::close() !!}
 

@@ -2,8 +2,8 @@
 
 return [
     'edit' => 'Edit',
-    'save-and-return' => 'Save and return to index',
-    'save-and-continue' => 'Save and continue editing',
+    'saveAndReturn' => 'Save and return to index',
+    'saveAndContinue' => 'Save and continue editing',
     'destroy' => 'Delete',
     'cancel' => 'Cancel',
     'create' => 'Create',

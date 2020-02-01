@@ -8,18 +8,18 @@ use App\Http\Requests\UpdateSubpage;
 use App\Subpage;
 use Illuminate\Http\Request;
 
-class Subpages extends Controller
+class SubpageController extends Controller
 {
     public function index()
     {
         $subpages = Subpage::all();
 
-        return view('subpages.index', ['subpages' => $subpages]);
+        return view('subpage.index', ['subpageList' => $subpages]);
     }
 
     public function create()
     {
-        return view('subpages.create');
+        return view('subpage.create');
     }
 
     public function store(StoreSubpage $request)
@@ -31,20 +31,20 @@ class Subpages extends Controller
         $subpage->save();
 
         if ($request->has(SaveMode::SAVE_AND_RETURN)) {
-            return redirect()->to(base64_decode($request->get('return-path')));
+            return redirect()->to(base64_decode($request->get('returnPath')));
         }
 
         return redirect()->route('subpage.edit', [
             $subpage->id,
-            'edit-lang' => $request->get('edit-lang'),
-            'return-path' => $request->get('return-path'),
+            'editLang' => $request->get('editLang'),
+            'returnPath' => $request->get('returnPath'),
         ]);
 
     }
 
     public function edit(Subpage $subpage)
     {
-        return view('subpages.edit', compact('subpage'));
+        return view('subpage.edit', compact('subpage'));
     }
 
     public function update(UpdateSubpage $request, Subpage $subpage)
@@ -53,13 +53,13 @@ class Subpages extends Controller
         $subpage->update($validated);
 
         if ($request->has(SaveMode::SAVE_AND_RETURN)) {
-            return redirect()->to(base64_decode($request->get('return-path')));
+            return redirect()->to(base64_decode($request->get('returnPath')));
         }
 
         return redirect()->route('subpage.edit', [
             $subpage->id,
-            'edit-lang' => $request->get('edit-lang'),
-            'return-path' => $request->get('return-path'),
+            'editLang' => $request->get('editLang'),
+            'returnPath' => $request->get('returnPath'),
         ]);
     }
 
@@ -67,6 +67,6 @@ class Subpages extends Controller
     {
         $subpage->delete();
 
-        return redirect()->to(base64_decode($request->get('return-path')));
+        return redirect()->to(base64_decode($request->get('returnPath')));
     }
 }
