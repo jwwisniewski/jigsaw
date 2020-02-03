@@ -35,4 +35,23 @@ trait MultiLangSupport
 
         return parent::setAttribute($key, $allValues);
     }
+
+    public function attributesToArray(): array
+    {
+        $attributes = parent::attributesToArray();
+
+        if (empty($attributes)) {
+            return $attributes;
+        }
+
+        foreach ($attributes as $key => $value) {
+            if ($value === null || $value === '' || !in_array($key, $this->multiLang, true)) {
+                continue;
+            }
+
+            $attributes[$key] = Arr::get($value, $this->getLocale(), null);
+        }
+
+        return $attributes;
+    }
 }
