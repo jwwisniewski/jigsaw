@@ -35,26 +35,8 @@ class Subpage extends Model
         'contents' => 'array',
     ];
 
+    protected $multiLang = ['title', 'contents'];
+
     protected $fillable = ['title', 'contents'];
-
-    public function getTitleAttribute(): ?string
-    {
-        return $this->readMultiLangValue('title');
-    }
-
-    public function setTitleAttribute($value): void
-    {
-        $this->storeMultiLangValue('title', $value);
-    }
-
-    public function getContentsAttribute(): ?string
-    {
-        return $this->readMultiLangValue('contents');
-    }
-
-    public function setContentsAttribute($value): void
-    {
-        $this->storeMultiLangValue('contents', $value);
-    }
 
 }

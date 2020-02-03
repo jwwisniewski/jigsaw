@@ -7,19 +7,32 @@ use Illuminate\Support\Arr;
 
 trait MultiLangSupport
 {
-    protected function readMultiLangValue(string $key): ?string
+    private function getLocale(): string
     {
-        $locale = request()->get('editLang', config('jigsaw.defaultClientLocale'));
-        $value = json_decode($this->attributes[$key], true, 512, JSON_THROW_ON_ERROR);
-
-        return Arr::get($value, $locale, null);
+        return request()->get('editLang', config('jigsaw.defaultClientLocale'));
     }
 
-    protected function storeMultiLangValue(string $key, ?string $value): void
+    public function getAttribute($key)
     {
-        $locale = request()->get('editLang', config('jigsaw.defaultClientLocale'));
-        $current = json_decode($this->attributes[$key] ?? '{}', true, 512, JSON_THROW_ON_ERROR);
-        $new = array_merge($current, [$locale => $value]);
-        $this->attributes[$key] = json_encode($new, JSON_THROW_ON_ERROR, 512);
+        $value = parent::getAttribute($key);
+
+        if ($value === null || $value === '' || !in_array($key, $this->multiLang, true)) {
+            return $value;
+        }
+
+        return Arr::get($value, $this->getLocale(), null);
+    }
+
+    public function setAttribute($key, $value)
+    {
+        if (!in_array($key, $this->multiLang, true)) {
+            return parent::setAttribute($key, $value);
+        }
+
+        $allValues = parent::getAttribute($key);
+
+        $allValues[$this->getLocale()] = $value;
+
+        return parent::setAttribute($key, $allValues);
     }
 }
