@@ -15,6 +15,9 @@ class UpdateSubpage extends FormRequest
     {
         return [
             'title' => 'required|min:3',
+            'url' => 'nullable|min:3',
+            'keywords' => 'nullable|min:3',
+            'description' => 'nullable|min:3',
             'contents' => 'required',
         ];
     }

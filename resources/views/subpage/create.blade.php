@@ -13,7 +13,10 @@
 
 {!! Form::open(['route' => ['subpage.store']]) !!}
 
-    {!! Form::text('title') !!} <br>
+    title - {!! Form::text('title') !!} <br>
+    url - {!! Form::text('url') !!} <br>
+    kw - {!! Form::text('keywords') !!} <br>
+    descr - {!! Form::textarea('description') !!} <br>
     {!! Form::textarea('contents', null, ['id' => 'editor']) !!} <br>
 
     {!! Form::submit(__('ui.saveAndContinue'), ['name' => \App\Enum\SaveMode::SAVE_AND_CONTINUE]) !!}

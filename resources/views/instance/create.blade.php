@@ -1,22 +1,22 @@
 <html>
 <head>
-    <script src="https://cdn.ckeditor.com/ckeditor5/16.0.0/classic/ckeditor.js"></script>
 </head>
 <body>
+
 <h1>
-    edit
+    create
 </h1>
 
 @include('common.errors')
-@include('common.editLang')
+@include('common.editLang', ['disabled' => true])
 
-{!! Form::model($subpage, ['route' => ['subpage.update', $subpage->id]]) !!}
+{!! Form::open(['route' => ['instance.store']]) !!}
 
+    module - {!! Form::select('module', $modules) !!} <br>
     title - {!! Form::text('title') !!} <br>
     url - {!! Form::text('url') !!} <br>
     kw - {!! Form::text('keywords') !!} <br>
     descr - {!! Form::textarea('description') !!} <br>
-    {!! Form::textarea('contents', null, ['id' => 'editor']) !!} <br>
 
     {!! Form::submit(__('ui.saveAndContinue'), ['name' => \App\Enum\SaveMode::SAVE_AND_CONTINUE]) !!}
     {!! Form::submit(__('ui.saveAndReturn'), ['name' => \App\Enum\SaveMode::SAVE_AND_RETURN]) !!}
@@ -28,12 +28,5 @@
 {!! Form::close() !!}
 
 
-<script>
-    ClassicEditor
-        .create( document.querySelector( '#editor' ) )
-        .catch( error => {
-            console.error( error );
-        } );
-</script>
 </body>
 </html>

@@ -1,17 +1,20 @@
 <html>
 <head>
     <script src="https://cdn.ckeditor.com/ckeditor5/16.0.0/classic/ckeditor.js"></script>
+
 </head>
 <body>
+
 <h1>
-    edit
+    create news
 </h1>
 
 @include('common.errors')
-@include('common.editLang')
+@include('common.editLang', ['disabled' => true])
 
-{!! Form::model($subpage, ['route' => ['subpage.update', $subpage->id]]) !!}
+{!! Form::open(['route' => ['news.store']]) !!}
 
+    module - {!! Form::select('instance_id', $instances) !!} <br>
     title - {!! Form::text('title') !!} <br>
     url - {!! Form::text('url') !!} <br>
     kw - {!! Form::text('keywords') !!} <br>

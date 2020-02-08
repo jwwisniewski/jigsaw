@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSubpagesTable extends Migration
+class CreateNewsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,9 @@ class CreateSubpagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('subpages', function (Blueprint $table) {
+        Schema::create('news', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedBigInteger('instance_id');
             $table->jsonb('title');
             $table->jsonb('url');
             $table->jsonb('keywords');
@@ -32,6 +33,6 @@ class CreateSubpagesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('subpages');
+        Schema::dropIfExists('news');
     }
 }

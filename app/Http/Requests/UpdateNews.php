@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreSubpage extends FormRequest
+class UpdateNews extends FormRequest
 {
     public function authorize()
     {
@@ -14,6 +14,7 @@ class StoreSubpage extends FormRequest
     public function rules()
     {
         return [
+//            'instance_id' => 'required|integer',
             'title' => 'required|min:3',
             'url' => 'nullable|min:3',
             'keywords' => 'nullable|min:3',

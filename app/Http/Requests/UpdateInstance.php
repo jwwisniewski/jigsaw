@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreSubpage extends FormRequest
+class UpdateInstance extends FormRequest
 {
     public function authorize()
     {
@@ -18,7 +18,6 @@ class StoreSubpage extends FormRequest
             'url' => 'nullable|min:3',
             'keywords' => 'nullable|min:3',
             'description' => 'nullable|min:3',
-            'contents' => 'required',
         ];
     }
 }

@@ -10,8 +10,8 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * App\Subpage
  *
  * @property int $id
- * @property array $title
- * @property array $contents
+ * @property string|null $title
+ * @property string|null $contents
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property string|null $deleted_at
@@ -32,11 +32,14 @@ class Subpage extends Model
 
     protected $casts = [
         'title' => 'array',
+        'url' => 'array',
+        'keywords' => 'array',
+        'description' => 'array',
         'contents' => 'array',
     ];
 
-    protected $multiLang = ['title', 'contents'];
+    protected $multiLang = ['title', 'url', 'keywords', 'description', 'contents'];
+    protected $fillable = ['title', 'url', 'keywords', 'description', 'contents'];
 
-    protected $fillable = ['title', 'contents'];
 
 }

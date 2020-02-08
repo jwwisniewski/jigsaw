@@ -3,20 +3,22 @@
     <script src="https://cdn.ckeditor.com/ckeditor5/16.0.0/classic/ckeditor.js"></script>
 </head>
 <body>
+
 <h1>
-    edit
+    edit news
 </h1>
 
 @include('common.errors')
 @include('common.editLang')
 
-{!! Form::model($subpage, ['route' => ['subpage.update', $subpage->id]]) !!}
+{!! Form::model($news, ['route' => ['news.update', $news->id]]) !!}
 
+    instance - {!! Form::select('instance_id', $instances, $news->instance_id, ['disabled']) !!} <br>
     title - {!! Form::text('title') !!} <br>
     url - {!! Form::text('url') !!} <br>
     kw - {!! Form::text('keywords') !!} <br>
     descr - {!! Form::textarea('description') !!} <br>
-    {!! Form::textarea('contents', null, ['id' => 'editor']) !!} <br>
+{!! Form::textarea('contents', null, ['id' => 'editor']) !!} <br>
 
     {!! Form::submit(__('ui.saveAndContinue'), ['name' => \App\Enum\SaveMode::SAVE_AND_CONTINUE]) !!}
     {!! Form::submit(__('ui.saveAndReturn'), ['name' => \App\Enum\SaveMode::SAVE_AND_RETURN]) !!}
@@ -24,7 +26,6 @@
 
     {!! Form::hidden('editLang', request()->get('editLang', config('jigsaw.defaultClientLocale'))) !!}
     {!! Form::hidden('returnPath', request()->get('returnPath')) !!}
-
 {!! Form::close() !!}
 
 
