@@ -7,6 +7,7 @@ use App\Http\Requests\StoreInstance;
 use App\Http\Requests\UpdateInstance;
 use App\Instance;
 use App\News;
+use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
 class InstanceController extends Controller
@@ -88,8 +89,11 @@ class InstanceController extends Controller
      * @param  \App\Instance $instance
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Instance $instance)
+    public function destroy(Instance $instance, Request $request)
     {
-        //
+        $instance->delete();
+
+        return redirect()->to(base64_decode($request->get('returnPath')));
+
     }
 }

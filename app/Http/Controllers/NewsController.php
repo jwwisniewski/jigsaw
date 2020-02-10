@@ -81,14 +81,10 @@ class NewsController extends Controller
         ]);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\News  $news
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(News $news)
+    public function destroy(News $news, Request $request)
     {
-        //
+        $news->delete();
+
+        return redirect()->to(base64_decode($request->get('returnPath')));
     }
 }
