@@ -2,5 +2,10 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/jwwisniewski/jigsaw-core" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/jwwisniewski/jigsaw-news" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/jwwisniewski/jigsaw-subpage" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/maximebf/debugbar" vcs="Git" />
   </component>
 </project>
