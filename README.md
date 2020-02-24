@@ -1,5 +1,8 @@
 ## jigsaw - a laravel playground
 
+![style ci](https://github.styleci.io/repos/234967665/shield)
+[![](https://circleci.com/gh/jwwisniewski/jigsaw.svg?style=shield)](https://circleci.com/gh/jwwisniewski/jigsaw)
+
 ## todo
 
 - [x] creating subpages from ui
