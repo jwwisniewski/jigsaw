@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5329fd6ad80490f6b2dbba8092588ca5",
+    "content-hash": "83fda06740bdfd04e8d0eda9b19e8e94",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -423,6 +423,116 @@
             "time": "2018-09-29T18:48:56+00:00"
         },
         {
+            "name": "jwwisniewski/jigsaw-core",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jwwisniewski/jigsaw-core.git",
+                "reference": "4bec92dc0acbe5144338ed5704c6cc4faee66abd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jwwisniewski/jigsaw-core/zipball/4bec92dc0acbe5144338ed5704c6cc4faee66abd",
+                "reference": "4bec92dc0acbe5144338ed5704c6cc4faee66abd",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^6"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "jwwisniewski\\Jigsaw\\Core\\JigsawCoreServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "jwwisniewski\\Jigsaw\\Core\\": "src"
+                }
+            },
+            "support": {
+                "source": "https://github.com/jwwisniewski/jigsaw-core/tree/master",
+                "issues": "https://github.com/jwwisniewski/jigsaw-core/issues"
+            },
+            "time": "2020-02-23T18:06:22+00:00"
+        },
+        {
+            "name": "jwwisniewski/jigsaw-news",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jwwisniewski/jigsaw-news.git",
+                "reference": "7b06cc9cdddfe266a09fc39cec2eaa81e9c9e0ba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jwwisniewski/jigsaw-news/zipball/7b06cc9cdddfe266a09fc39cec2eaa81e9c9e0ba",
+                "reference": "7b06cc9cdddfe266a09fc39cec2eaa81e9c9e0ba",
+                "shasum": ""
+            },
+            "require": {
+                "jwwisniewski/jigsaw-core": "dev-master",
+                "laravelcollective/html": "^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "jwwisniewski\\Jigsaw\\News\\JigsawNewsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "jwwisniewski\\Jigsaw\\News\\": "src"
+                }
+            },
+            "support": {
+                "source": "https://github.com/jwwisniewski/jigsaw-news/tree/master",
+                "issues": "https://github.com/jwwisniewski/jigsaw-news/issues"
+            },
+            "time": "2020-02-23T18:08:36+00:00"
+        },
+        {
+            "name": "jwwisniewski/jigsaw-subpage",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jwwisniewski/jigsaw-subpage.git",
+                "reference": "626d33611b33754c0936755a6972c1a0bcc31f57"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jwwisniewski/jigsaw-subpage/zipball/626d33611b33754c0936755a6972c1a0bcc31f57",
+                "reference": "626d33611b33754c0936755a6972c1a0bcc31f57",
+                "shasum": ""
+            },
+            "require": {
+                "jwwisniewski/jigsaw-core": "dev-master",
+                "laravelcollective/html": "^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "jwwisniewski\\Jigsaw\\Subpage\\JigsawSubageServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "jwwisniewski\\Jigsaw\\Subpage\\": "src"
+                }
+            },
+            "support": {
+                "source": "https://github.com/jwwisniewski/jigsaw-subpage/tree/master",
+                "issues": "https://github.com/jwwisniewski/jigsaw-subpage/issues"
+            },
+            "time": "2020-02-23T18:09:04+00:00"
+        },
+        {
             "name": "laravel/framework",
             "version": "v6.12.0",
             "source": {
@@ -682,7 +792,7 @@
         },
         {
             "name": "laravelcollective/html",
-            "version": "v6.0.3",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LaravelCollective/html.git",
@@ -3176,6 +3286,74 @@
     ],
     "packages-dev": [
         {
+            "name": "barryvdh/laravel-debugbar",
+            "version": "v3.2.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/barryvdh/laravel-debugbar.git",
+                "reference": "18208d64897ab732f6c04a19b319fe8f1d57a9c0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/18208d64897ab732f6c04a19b319fe8f1d57a9c0",
+                "reference": "18208d64897ab732f6c04a19b319fe8f1d57a9c0",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/routing": "^5.5|^6",
+                "illuminate/session": "^5.5|^6",
+                "illuminate/support": "^5.5|^6",
+                "maximebf/debugbar": "~1.15.0",
+                "php": ">=7.0",
+                "symfony/debug": "^3|^4",
+                "symfony/finder": "^3|^4"
+            },
+            "require-dev": {
+                "laravel/framework": "5.5.x"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Barryvdh\\Debugbar\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "Debugbar": "Barryvdh\\Debugbar\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Barryvdh\\Debugbar\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "PHP Debugbar integration for Laravel",
+            "keywords": [
+                "debug",
+                "debugbar",
+                "laravel",
+                "profiler",
+                "webprofiler"
+            ],
+            "time": "2019-08-29T07:01:03+00:00"
+        },
+        {
             "name": "barryvdh/laravel-ide-helper",
             "version": "v2.6.6",
             "source": {
@@ -4295,6 +4473,67 @@
                 "schema"
             ],
             "time": "2019-09-25T14:49:45+00:00"
+        },
+        {
+            "name": "maximebf/debugbar",
+            "version": "v1.15.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maximebf/php-debugbar.git",
+                "reference": "6c4277f6117e4864966c9cb58fb835cee8c74a1e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/6c4277f6117e4864966c9cb58fb835cee8c74a1e",
+                "reference": "6c4277f6117e4864966c9cb58fb835cee8c74a1e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6",
+                "psr/log": "^1.0",
+                "symfony/var-dumper": "^2.6|^3|^4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5"
+            },
+            "suggest": {
+                "kriswallsmith/assetic": "The best way to manage assets",
+                "monolog/monolog": "Log using Monolog",
+                "predis/predis": "Redis storage"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.15-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "DebugBar\\": "src/DebugBar/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maxime Bouroumeau-Fuseau",
+                    "email": "maxime.bouroumeau@gmail.com",
+                    "homepage": "http://maximebf.com"
+                },
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "Debug bar in the browser for php application",
+            "homepage": "https://github.com/maximebf/php-debugbar",
+            "keywords": [
+                "debug",
+                "debugbar"
+            ],
+            "time": "2019-09-24T14:55:42+00:00"
         },
         {
             "name": "mockery/mockery",
@@ -6041,7 +6280,10 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "jwwisniewski/jigsaw-news": 20,
+        "jwwisniewski/jigsaw-subpage": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
