@@ -464,12 +464,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jwwisniewski/jigsaw-news.git",
-                "reference": "7b06cc9cdddfe266a09fc39cec2eaa81e9c9e0ba"
+                "reference": "3d8fe1620fc060b68c4058a54160609f9ca0363e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jwwisniewski/jigsaw-news/zipball/7b06cc9cdddfe266a09fc39cec2eaa81e9c9e0ba",
-                "reference": "7b06cc9cdddfe266a09fc39cec2eaa81e9c9e0ba",
+                "url": "https://api.github.com/repos/jwwisniewski/jigsaw-news/zipball/3d8fe1620fc060b68c4058a54160609f9ca0363e",
+                "reference": "3d8fe1620fc060b68c4058a54160609f9ca0363e",
                 "shasum": ""
             },
             "require": {
@@ -493,7 +493,7 @@
                 "source": "https://github.com/jwwisniewski/jigsaw-news/tree/master",
                 "issues": "https://github.com/jwwisniewski/jigsaw-news/issues"
             },
-            "time": "2020-02-23T18:08:36+00:00"
+            "time": "2020-02-25T23:05:39+00:00"
         },
         {
             "name": "jwwisniewski/jigsaw-subpage",
