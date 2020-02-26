@@ -428,12 +428,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jwwisniewski/jigsaw-core.git",
-                "reference": "4bec92dc0acbe5144338ed5704c6cc4faee66abd"
+                "reference": "b8e2f42195adbc5bbf91ad0302ebf1158892be4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jwwisniewski/jigsaw-core/zipball/4bec92dc0acbe5144338ed5704c6cc4faee66abd",
-                "reference": "4bec92dc0acbe5144338ed5704c6cc4faee66abd",
+                "url": "https://api.github.com/repos/jwwisniewski/jigsaw-core/zipball/b8e2f42195adbc5bbf91ad0302ebf1158892be4e",
+                "reference": "b8e2f42195adbc5bbf91ad0302ebf1158892be4e",
                 "shasum": ""
             },
             "require": {
@@ -456,7 +456,7 @@
                 "source": "https://github.com/jwwisniewski/jigsaw-core/tree/master",
                 "issues": "https://github.com/jwwisniewski/jigsaw-core/issues"
             },
-            "time": "2020-02-23T18:06:22+00:00"
+            "time": "2020-02-24T22:53:01+00:00"
         },
         {
             "name": "jwwisniewski/jigsaw-news",
@@ -501,12 +501,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jwwisniewski/jigsaw-subpage.git",
-                "reference": "626d33611b33754c0936755a6972c1a0bcc31f57"
+                "reference": "677d589eb3f6ed9716aee0f5f42d4748f4ba2021"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jwwisniewski/jigsaw-subpage/zipball/626d33611b33754c0936755a6972c1a0bcc31f57",
-                "reference": "626d33611b33754c0936755a6972c1a0bcc31f57",
+                "url": "https://api.github.com/repos/jwwisniewski/jigsaw-subpage/zipball/677d589eb3f6ed9716aee0f5f42d4748f4ba2021",
+                "reference": "677d589eb3f6ed9716aee0f5f42d4748f4ba2021",
                 "shasum": ""
             },
             "require": {
@@ -530,7 +530,7 @@
                 "source": "https://github.com/jwwisniewski/jigsaw-subpage/tree/master",
                 "issues": "https://github.com/jwwisniewski/jigsaw-subpage/issues"
             },
-            "time": "2020-02-23T18:09:04+00:00"
+            "time": "2020-02-25T00:00:41+00:00"
         },
         {
             "name": "laravel/framework",
