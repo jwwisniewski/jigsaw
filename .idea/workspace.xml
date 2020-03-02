@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f02b4597-983f-4606-af24-bdb5ab61e2a1" name="Default Changelist" comment=" bump subpage and core">
+    <list default="true" id="f02b4597-983f-4606-af24-bdb5ab61e2a1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/laravel-dusk.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Browser/Pages/Subpage/ListingPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Browser/Pages/Subpage/ListingPage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Browser/SubpagesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Browser/SubpagesTest.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,11 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Browser/SubpagesTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+            <state relative-caret-position="355">
+              <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
               <folding>
                 <element signature="e#33#86#0#PHP" expanded="true" />
               </folding>
@@ -50,12 +49,17 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/php-webdriver/webdriver/lib/WebDriverBy.php">
+        <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+            <state relative-caret-position="135">
+              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env.example">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -64,13 +68,6 @@
             <state relative-caret-position="150">
               <caret line="10" selection-start-line="10" selection-end-line="11" selection-end-column="62" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/jwwisniewski/jigsaw-core/src/JigsawCoreServiceProvider.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-332" />
           </provider>
         </entry>
       </file>
@@ -87,8 +84,39 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/storage/logs/laravel.log">
-          <provider selected="true" editor-type-id="LogFileEditorProvider" />
+        <entry file="file://$PROJECT_DIR$/.env.dusk.local">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.github/workflows/laravel.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" selection-start-line="23" selection-end-line="24" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="292">
+              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.github/workflows/laravel-dusk.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -96,32 +124,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
               <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/jwwisniewski/jigsaw-subpage/views/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Browser/Pages/Subpage/CreatePage.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
-              <folding>
-                <element signature="e#47#72#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env.dusk.local">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -148,6 +150,7 @@
       <find>jigsaw-core::e</find>
       <find>addN</find>
       <find>INSTANTIABLE</find>
+      <find>It is unsafe to run Dusk in production</find>
     </findStrings>
     <replaceStrings>
       <replace>request()-&gt;</replace>
@@ -179,7 +182,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vendor/jwwisniewski/jigsaw-news/src/Requests/StoreNews.php" />
         <option value="$PROJECT_DIR$/app/Instance.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/InstanceController.php" />
         <option value="$PROJECT_DIR$/resources/views/instance/index.blade.php" />
@@ -207,7 +209,6 @@
         <option value="$PROJECT_DIR$/vendor/jwwisniewski/jigsaw-subpage/composer.json" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/vendor/jwwisniewski/jigsaw-news/src/JigsawNewsServiceProvider.php" />
-        <option value="$PROJECT_DIR$/.circleci/config.yml" />
         <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/tests/DuskTestCase.php" />
@@ -230,6 +231,8 @@
         <option value="$PROJECT_DIR$/storage/logs/laravel.log" />
         <option value="$PROJECT_DIR$/vendor/jwwisniewski/jigsaw-subpage/views/edit.blade.php" />
         <option value="$PROJECT_DIR$/tests/Browser/SubpagesTest.php" />
+        <option value="$PROJECT_DIR$/.circleci/config.yml" />
+        <option value="$PROJECT_DIR$/.github/workflows/laravel-dusk.yml" />
       </list>
     </option>
   </component>
@@ -391,6 +394,22 @@
             <path>
               <item name="jigsaw" type="b2602c69:ProjectViewProjectNode" />
               <item name="jigsaw" type="462c0819:PsiDirectoryNode" />
+              <item name=".circleci" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jigsaw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jigsaw" type="462c0819:PsiDirectoryNode" />
+              <item name=".github" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jigsaw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jigsaw" type="462c0819:PsiDirectoryNode" />
+              <item name=".github" type="462c0819:PsiDirectoryNode" />
+              <item name="workflows" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jigsaw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jigsaw" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -523,6 +542,116 @@
       <recent name="$PROJECT_DIR$/vendor/jwwisniewski/jigsaw-core/translations/instance" />
     </key>
   </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/tests/Browser/SubpagesTest.php</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -554,7 +683,7 @@
       <workItem from="1582234405664" duration="19665000" />
       <workItem from="1582480662072" duration="5972000" />
       <workItem from="1583106619123" duration="475000" />
-      <workItem from="1583107119885" duration="1299000" />
+      <workItem from="1583107119885" duration="2240000" />
     </task>
     <task id="LOCAL-00001" summary="editlang dropdown; error pages; various tweaks">
       <created>1580425860961</created>
@@ -759,17 +888,31 @@
       <option name="project" value="LOCAL" />
       <updated>1583108379167</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="update subpages, expand first dusk test">
+      <created>1583108581869</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1583108581869</updated>
+    </task>
+    <task id="LOCAL-00031" summary="move cp .env before composer install">
+      <created>1583108911725</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1583108911725</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116955000" />
+    <option name="totallyTimeSpent" value="117896000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33844912" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33844912" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" weight="0.32956383" />
@@ -782,7 +925,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.49919224" visible="true" weight="0.25985402" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49919224" visible="true" weight="0.25985402" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.329927" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50080776" side_tool="true" weight="0.5781022" />
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.329927" />
@@ -808,8 +951,6 @@
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
       <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
     </ignored-roots>
-    <MESSAGE value="move multi language model features to a trait" />
-    <MESSAGE value="move multi language model features to a trait - refactor trait" />
     <MESSAGE value="move multi language model features to a trait - refactor trait - add missing attributesToArray" />
     <MESSAGE value="news, subpages and instances" />
     <MESSAGE value="add missing delete methods" />
@@ -833,7 +974,9 @@
     <MESSAGE value="copy env file" />
     <MESSAGE value="dusk v1" />
     <MESSAGE value="fixes to views include, add class to cancel button" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes to views include, add class to cancel button" />
+    <MESSAGE value="update subpages, expand first dusk test" />
+    <MESSAGE value="move cp .env before composer install" />
+    <option name="LAST_COMMIT_MESSAGE" value="move cp .env before composer install" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -872,13 +1015,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/dusk/src/Chrome/SupportsChrome.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="774">
-          <caret line="61" column="30" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -928,9 +1064,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env.example">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/Browser/screenshots/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -939,13 +1072,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -960,13 +1086,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-37">
           <caret line="121" column="44" selection-start-line="121" selection-start-column="44" selection-end-line="121" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="54" column="42" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -1055,13 +1174,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.github/workflows/laravel.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" selection-start-line="23" selection-end-line="24" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/database.sqlite">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1077,13 +1189,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.lock">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env.dusk.local">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Browser/Pages/Subpage/CreatePage.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1150,11 +1255,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Browser/SubpagesTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+        <state relative-caret-position="355">
+          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
           <folding>
             <element signature="e#33#86#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.example">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.dusk.local">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.github/workflows/laravel.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" selection-start-line="23" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.github/workflows/laravel-dusk.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
         </state>
       </provider>
     </entry>
