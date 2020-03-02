@@ -32,3 +32,8 @@ jobs:
         APP_URL: http://127.0.0.1:8000
         DUSK_CHROME_URL: http://localhost:9515
       run: php artisan dusk
+    - uses: actions/upload-artifact@v1
+      if: failure()
+      with:
+        name: dusk-artifacts
+        path: ./tests/Browser/screenshots
