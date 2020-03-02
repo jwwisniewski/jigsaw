@@ -39,7 +39,7 @@ abstract class DuskTestCase extends BaseTestCase
         ]);
 
         return RemoteWebDriver::create(
-            'http://chrome:9515', DesiredCapabilities::chrome()->setCapability(
+            env('DUSK_CHROME_URL'), DesiredCapabilities::chrome()->setCapability(
                 ChromeOptions::CAPABILITY, $options
             )->setCapability('acceptInsecureCerts', true)
         );
