@@ -29,6 +29,7 @@ class ListingPage extends Page
         $browser
             ->assertPathIs($this->url())
             ->assertSeeIn('h1', 'subpages')
+            ->assertSeeLink('Create');
         ;
     }
 
