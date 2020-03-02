@@ -15,7 +15,6 @@ class SubpagesTest extends DuskTestCase
     public function testSubpageCreation()
     {
         $this->browse(function (Browser $browser) {
-
             $browser->visit(new ListingPage())
                 ->click('@createLink')
                 ->on(new CreatePage())
