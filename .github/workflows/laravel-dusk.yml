@@ -17,8 +17,9 @@ jobs:
       run: chmod -R 777 storage bootstrap/cache
     - name: Create Database
       run: |
-        mkdir -p ./database
-        touch ./database/database.sqlite
+        mkdir -p database
+        touch database/database.sqlite
+        pwd
     - name: Upgrade Chrome Driver
       run: php artisan dusk:chrome-driver
     - name: Start Chrome Driver
