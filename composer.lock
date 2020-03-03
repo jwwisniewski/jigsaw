@@ -744,20 +744,20 @@
         },
         {
             "name": "laravelcollective/errors",
-            "version": "v1.0.1",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LaravelCollective/errors.git",
-                "reference": "2c1ff5b31ec1c6607586eb8dd31d473cb99d3d6e"
+                "reference": "8a0cf6fb73ba0041330967d3d6a137bd4509f7bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LaravelCollective/errors/zipball/2c1ff5b31ec1c6607586eb8dd31d473cb99d3d6e",
-                "reference": "2c1ff5b31ec1c6607586eb8dd31d473cb99d3d6e",
+                "url": "https://api.github.com/repos/LaravelCollective/errors/zipball/8a0cf6fb73ba0041330967d3d6a137bd4509f7bd",
+                "reference": "8a0cf6fb73ba0041330967d3d6a137bd4509f7bd",
                 "shasum": ""
             },
             "require": {
-                "laravel/framework": "^6.0",
+                "laravel/framework": "^6.0|^7.0",
                 "php": ">=7.1.3"
             },
             "type": "library",
@@ -788,7 +788,7 @@
             ],
             "description": "Error pages for the Laravel Framework",
             "homepage": "https://laravelcollective.com",
-            "time": "2019-09-23T06:51:49+00:00"
+            "time": "2020-03-02T18:31:02+00:00"
         },
         {
             "name": "laravelcollective/html",
