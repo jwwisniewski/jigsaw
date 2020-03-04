@@ -23,4 +23,4 @@ down:
 	docker-compose down --remove-orphans
 
 console:
-	docker-compose exec phpfpm bash
+	docker-compose up -d --remove-orphans && docker-compose exec phpfpm bash

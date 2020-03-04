@@ -32,6 +32,8 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
+      - run: php -r "file_exists('.env') || copy('.env.example', '.env');"
+
       - run: composer install -n --prefer-dist
 
       - save_cache:
@@ -53,7 +55,6 @@ jobs:
 #      - run: php artisan migrate --env=testing --database=sqlite_testing --force
 
 #       run tests with phpunit or codecept
-      - run: php -r "file_exists('.env') || copy('.env.example', '.env');"
       - run: php artisan key:generate
       - run: ./vendor/bin/phpunit
 #      - run: ./vendor/bin/codecept build

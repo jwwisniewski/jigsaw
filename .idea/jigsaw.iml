@@ -7,8 +7,10 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/jwwisniewski/jigsaw-core" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/jwwisniewski/jigsaw-news" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/jwwisniewski/jigsaw-subpage" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/laravel/dusk" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/laravelcollective/errors" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/maximebf/debugbar" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/php-webdriver/webdriver" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
